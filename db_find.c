@@ -33,5 +33,5 @@ int _db_find(DB *db, const char *key, int writelock)
 	}
 	if(offset == 0)
 		return(-1); /* error -- record not found */
-	return(0);
+	return(0); /* if not error */
 }
