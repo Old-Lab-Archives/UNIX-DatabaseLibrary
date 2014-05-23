@@ -2,7 +2,8 @@
 #include<sys/stat.h> /* open() & db_open() mode */
 #include<fcntl.h> /* open() & db_open() flags */
 #include<stddef.h> /* NULL */
-#include "juice.h"
+#include "juice.h" /* our own header */
+#include<sys/uio.h> /* struct iovec */
 /* Flags for the database store */
 #define DB_INSERT 1 /* insert new record only */
 #define DB_REPLACE 2 /* replace existing record */
